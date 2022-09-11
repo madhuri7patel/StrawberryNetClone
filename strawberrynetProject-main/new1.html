@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals</title>
+    <link rel="stylesheet" href="./styles/new1.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="shortcut icon" type="image/jpg"
+        href="https://media.glassdoor.com/sqll/2397264/strawberrynet-squarelogo-1561462036150.png" />
+    <style>
+        #new1{ background-color: white;
+ color: #623381; font-weight: bold;
+        }
+     </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="navbaroptions" class="bg"></div>
+    <!-- <button id="sort">SORT Below 500</button>
+    <button id="sort300">SORT BELOW 300</button> -->
+
+
+       <!-- searching start here -->
+
+       <div id="newresults"></div>
+
+       <!-- searching end here -->
+
+
+
+
+    <div id="body">
+        <div id="image">
+            <div>
+                <p id="gift"> Gift & Specials <span> > </span> <span id="new">New Arrivals</span></p>
+                <h1>NEW ARRIVALS</h1>
+            </div>
+            <div>
+                <img src="https://a.cdnsbn.com/images/English/category_EarlyBirdSale8offNov21_692_1.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="box">
+            <div id="combine">
+                <div id="newarrivals">
+                    <h3>New Arrivals</h3>
+                    <p>Skincare(10)</p>
+                    <p>Make UP(5)</p>
+                    <p>Hair Care(4)</p>
+                    <p>Men's Cologne(6)</p>
+                    <p>Women's Perfume(5)</p>
+                </div>
+
+                <div id="refine">
+                    <h3>Refine by Brands</h3>
+                    <div id="brands">
+                        <div>
+                            <input type="checkbox" id="revolve"><label for="">Revolve</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mercari"><label for="">Mercari</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="3wclinic"><label for="">3w clinic</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="111skin"><label for="">111 Skin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Hermes"><label for="">Hermes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gucci"><label for="">Gucci</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sisley"><label for="">Sisley</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sk11"><label for="">SK 11</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Paco"><label for="">Paco Rabanne</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gucci"><label for="">Nuxo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Hermes"><label for="">Payot</label>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div id="image">
+                    <h3>New Arrivals</h3>
+                    <p id="hover">Worldwide RRP converted to INR</p>
+
+                </div>
+                <div id="line"></div>
+                <div id="filter">
+                    <button id="sort">SORT BELOW Rs.500</button>
+                    <button id="sort300">SORT ABOVE Rs.1000</button>
+                </div>
+                <div id="products"></div>
+                <div id="sortingproducts"></div>
+                <di id="sorting300">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- FOOTER JS END -->
+
+    <div id="footerEndPush"></div>
+
+    <!-- FOOTER JS END -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
+<script src="./js elements/new1.js"></script>
+<script type="module">
+    import { headerupper, navbarbelow } from './js elements/header.js'
+    let head = document.getElementById('header')
+    head.innerHTML = headerupper();
+    let navbaroptions = document.getElementById("navbaroptions");
+    navbaroptions.innerHTML = navbarbelow();
+
+    // END FOOTER JS PART
+
+
+    var searchdata = document.getElementById("inputdata");
+    let dbs = document.getElementById("searchableData");
+    dbs.addEventListener("click", fetchData);
+    async function fetchData() {
+      let itemneedned = searchdata.value;
+      let res = await fetch(
+        `https://serpapi.com/search.json?engine=google&q=${itemneedned}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      );
+      let data = await res.json();
+      console.log(data);
+      let showdatainpage = document.getElementById("newresults");
+      let items = data.shopping_results;
+
+      showdatainpage.style.display = "grid";
+      showdatainpage.style.gridTemplateColumns = "auto auto auto auto";
+      showdatainpage.style.gap = "2%";
+      showdatainpage.style.marginLeft = "2%";
+      items.forEach((d) => {
+        let div = document.createElement("div");
+        div.style.width = "250px"
+        let img = document.createElement("img");
+        img.src = d.thumbnail;
+        img.style.width = "200px";
+        img.style.marginLeft = "25px"
+        img.style.height = "250px";
+        let name = document.createElement("p");
+        name.style.color = "blue";
+        name.style.marginLeft = "3%";
+        name.innerText = d.title;
+        let price = document.createElement("p");
+        price.innerText = d.price;
+        let addtocartbtn = document.createElement("button");
+        addtocartbtn.innerText = "Add to cart";
+        addtocartbtn.backgroundColor = "white";
+        addtocartbtn.style.marginLeft = "3%";
+        div.append(img, name, price, addtocartbtn);
+        showdatainpage.append(div);
+      });
+    }
+
+
+
+    
+    // --------------------------------drop down effect for search tab-----------------------------
+
+    let onlineSearch = document.getElementById("onlineSearch");
+
+    // onlineSearch.addEventListener("click");
+    let searchinpdata = document.getElementById("inputdata");
+    var sets;
+    searchinpdata.addEventListener("input", startsearchingfordata);
+
+    function startsearchingfordata(e) {
+      onlineSearch.textContent = e.target.value;
+      var inpt = searchinpdata.value;
+
+      debounce(startshowofsug, 3000);
+      function debounce(startshowofsug, time) {
+        if (sets) {
+          clearTimeout(sets);
+        }
+        sets = setTimeout(() => {
+          startshowofsug(inpt);
+        }, time);
+      }
+
+      if (inpt != " ") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "block";
+        searchR.style.backgroundColor = "white";
+        let out = searchinpdata.value;
+        console.log(out);
+      }
+      if (inpt == "") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "none";
+        let showdatainpage = document.getElementById("newresults");
+        showdatainpage.innerHTML = null;
+      }
+    }
+
+    async function startshowofsug(data) {
+      onlineSearch.textContent = null;
+      let res = await fetch(
+        `https://serpapi.com/search.json?engine=google&q=${data}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      );
+
+      let respdata = await res.json();
+
+      let newdata = respdata.shopping_results;
+      console.log(respdata.shopping_results);
+      newdata.forEach(function (d) {
+        let p = document.createElement("p");
+        p.innerText = d.title;
+        p.onclick = function () {
+          console.log(d);
+          showMoreInfo(d);
+        };
+        onlineSearch.append(p);
+      });
+    }
+
+    function showMoreInfo(d) {
+      let showdatainpage = document.getElementById("newresults");
+      showdatainpage.style.marginLeft = "20%";
+
+      let div = document.createElement("div");
+      div.style.width = "250px";
+      let img = document.createElement("img");
+      img.src = d.thumbnail;
+      img.style.width = "200px";
+      img.style.marginLeft = "25px";
+      img.style.height = "250px";
+      let name = document.createElement("p");
+      name.style.color = "blue";
+      name.style.marginLeft = "3%";
+      name.innerText = d.title;
+      let price = document.createElement("p");
+      price.innerText = d.price;
+      let addtocartbtn = document.createElement("button");
+      addtocartbtn.innerText = "Add to cart";
+      addtocartbtn.backgroundColor = "white";
+      addtocartbtn.style.marginLeft = "3%";
+      div.append(img, name, price, addtocartbtn);
+      showdatainpage.append(div);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var footerEndPush = document.getElementById('footerEndPush')
+
+    import footer from './js elements/footer.js'
+
+    footerEndPush.innerHTML = footer()
+
+    // END FOOTER JS PART
+</script>

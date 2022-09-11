@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://media.glassdoor.com/sqll/2397264/strawberrynet-squarelogo-1561462036150.png"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <!-- <!-header start-  -->
+    <div id="header"></div>
+    <div id="navbaroptions" class="bg"></div>
+    <!-- header end -->
+    <!-- navbar end here -->
+
+    <!-- searching start here -->
+
+    <div id="newresults"></div>
+
+    <!-- searching end here -->
+
+    <!-- slider start -->
+    <div class="mainslidercontainer">
+      <div class="slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_EarlyBirdSale8offNov21_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_NaturalBeauty30Aug21_1170_1.jpg?v=3"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_BestBuysNov21_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_DailySpecialsNov21_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_SkincareSerumsOct21_1170_1.jpg?v=3"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_HolidayGiftSetsOct21_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_1111SpecialsPicksOct21_1170_1.jpg?v=3"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_Nov21top40_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_Oct21SpecialPurchase_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_HolidayScentsOct21_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_BargainZoneOct21_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_VeganBeautyNov20_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_AshiyaMay21_1170_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://a.cdnsbn.com/images/English/banner_RewardProgramBP_1140_1.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    <!-- slider end here -->
+
+    <!-- sepreter line start here -->
+    <div style="margin-top: 00px" class="gridcon">
+      <div class=""><hr /></div>
+      <div class="gridi"><p>11.11.1 DAILY SPECIALS</p></div>
+      <div class=""><hr /></div>
+    </div>
+    <!-- product starting from here -->
+    <div id="products"></div>
+
+    <div style="margin-top: 700px" class="gridcon">
+      <div class=""><hr /></div>
+      <div class="gridi"><p>11.11 BUDGET ZONE</p></div>
+      <div class=""><hr /></div>
+    </div>
+
+    <div id="products"></div>
+
+    <div style="margin-top: 650px" class="gridcon">
+      <div class=""><hr /></div>
+      <div class="gridi">
+        <p>Discounted Products</p>
+        <p id="demo"></p>
+      </div>
+      <div class=""><hr /></div>
+    </div>
+
+    <div id="products"></div>
+    <!-- used slider -->
+
+    <div id="slider">
+      <h3>Beauty Product Spotlight</h3>
+      <div id="slide">
+        <div>
+          <img
+            src="https://www.kindpng.com/picc/m/130-1302304_arrow-left-pointing-direction-pointer-purple-name-of.png"
+            id="swapleft"
+          />
+        </div>
+        <div id="cont61"></div>
+        <div>
+          <img
+            src="https://w7.pngwing.com/pngs/892/636/png-transparent-arrow-right-arrow-purple-television-angle.png"
+            id="swapright"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- fixed boxes -->
+
+    <div class="bestdeal">
+      <div class="gridcon">
+        <div class=""><hr style="border-bottom: 4px solid #65318f" /></div>
+        <div class="gridi"><p>BEST DEALS</p></div>
+        <div class=""><hr style="border-bottom: 4px solid #65318f" /></div>
+      </div>
+
+      <div class="gridcontainer">
+        <div class="griditom boxx">
+          <img
+            src="https://a.cdnsbn.com/images/products/250/07207984003.jpg"
+            class="center"
+          />
+          <p>Davidoff</p>
+          <h4>Calvin Klein Eternity Deodorant Stick 75g/2.6oz</h4>
+          <h5>Save 66%</h5>
+          <h2>US$18.50</h2>
+          <p>RRP US$55.00</p>
+          <button class="fixbtn">Add To Bag</button>
+        </div>
+
+        <div class="griditom boxx">
+          <img
+            src="https://a.cdnsbn.com/images/products/250/00768531306.jpg"
+            class="center"
+          />
+          <p>Issey Miyake</p>
+          <h4>L'Eau D'issey Eau De Toilette Spray 100ml/3.3oz</h4>
+          <h5>Save 35%</h5>
+          <h2>US$69.50</h2>
+          <p>RRP US$106.00</p>
+          <button class="fixbtn">Add To Bag</button>
+        </div>
+
+        <div class="griditom boxx">
+          <img
+            src="https://a.cdnsbn.com/images/products/250/04741780301.jpg"
+            class="center"
+          />
+          <p>Clarins</p>
+          <h4>Lisse Minute - Instant Smooth Perfecting Touch Makeup Base</h4>
+          <h5>Save 17%</h5>
+          <h2>US$32.50</h2>
+          <p>RRP US$5.00</p>
+          <button class="fixbtn">Add To Bag</button>
+        </div>
+
+        <div class="griditom boxx">
+          <img
+            src="https://a.cdnsbn.com/images/products/250/07055628903.jpg"
+            class="center"
+          />
+          <p>Narciso Rodriguez</p>
+          <h4>Narciso Rodriguez For Her Body Lotion 200ml/6.7oz</h4>
+          <h5>Save 15%</h5>
+          <h2>US$47.50</h2>
+          <p>RRP US$56.00</p>
+          <button class="fixbtn">Add To Bag</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="margin-top: 20px" class="gridcon">
+        <div class=""><hr /></div>
+        <div class="gridi"><p>TOP BRANDS</p></div>
+        <div class=""><hr /></div>
+      </div>
+    </div>
+
+    <div style="margin-left: 200px">
+      <img src="https://i.ibb.co/j3f7HH3/topbrands.png" />
+    </div>
+    <!-- FOOTER JS END -->
+    <div id="footerEndPush"></div>
+    <!-- FOOTER JS END -->
+    <button onclick="topFunction()" id="myBtnn" title="Go to top">
+      <i class="far fa-arrow-alt-to-top"></i>Go To Top
+    </button>
+  </body>
+
+  <script src="./js elements/index.js"></script>
+
+  <!-- FOOTER SCRIPT ADDING -->
+  <script type="module">
+    import { headerupper, navbarbelow } from "./js elements/header.js";
+    let head = document.getElementById("header");
+    head.innerHTML = headerupper();
+    let navbaroptions = document.getElementById("navbaroptions");
+    navbaroptions.innerHTML = navbarbelow();
+
+    var searchdata = document.getElementById("inputdata");
+    let dbs = document.getElementById("searchableData");
+    dbs.addEventListener("click", fetchData);
+    async function fetchData() {
+      let itemneedned = searchdata.value;
+      let res = await fetch(
+        `https://serpapi.com/search.json?engine=google&q=${itemneedned}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      );
+      let data = await res.json();
+      console.log(data);
+      let showdatainpage = document.getElementById("newresults");
+      let items = data.shopping_results;
+
+      showdatainpage.style.display = "grid";
+      showdatainpage.style.gridTemplateColumns = "auto auto auto auto";
+      showdatainpage.style.gap = "2%";
+      showdatainpage.style.marginLeft = "2%";
+      items.forEach((d) => {
+        let div = document.createElement("div");
+        div.style.width = "250px";
+        let img = document.createElement("img");
+        img.src = d.thumbnail;
+        img.style.width = "200px";
+        img.style.marginLeft = "25px";
+        img.style.height = "250px";
+        let name = document.createElement("p");
+        name.style.color = "blue";
+        name.style.marginLeft = "3%";
+        name.innerText = d.title;
+        let price = document.createElement("p");
+        price.innerText = d.price;
+        let addtocartbtn = document.createElement("button");
+        addtocartbtn.innerText = "Add to cart";
+        addtocartbtn.onclick = function () {
+          Swal.fire(
+            "Good job!",
+            "Added product to Cart Successfully",
+            "success"
+          );
+        };
+        addtocartbtn.backgroundColor = "white";
+        addtocartbtn.style.marginLeft = "3%";
+        div.append(img, name, price, addtocartbtn);
+        showdatainpage.append(div);
+      });
+    }
+
+    // --------------------------------drop down effect for search tab-----------------------------
+
+    let onlineSearch = document.getElementById("onlineSearch");
+
+    // onlineSearch.addEventListener("click");
+    let searchinpdata = document.getElementById("inputdata");
+    var sets;
+    searchinpdata.addEventListener("input", startsearchingfordata);
+
+    function startsearchingfordata(e) {
+      onlineSearch.textContent = e.target.value;
+      var inpt = searchinpdata.value;
+
+      debounce(startshowofsug, 3000);
+      function debounce(startshowofsug, time) {
+        if (sets) {
+          clearTimeout(sets);
+        }
+        sets = setTimeout(() => {
+          startshowofsug(inpt);
+        }, time);
+      }
+
+      if (inpt != " ") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "block";
+        searchR.style.backgroundColor = "white";
+        let out = searchinpdata.value;
+        console.log(out);
+      }
+      if (inpt == "") {
+        let searchR = document.getElementById("onlineSearch");
+        searchR.style.display = "none";
+        let showdatainpage = document.getElementById("newresults");
+        showdatainpage.innerHTML = null;
+      }
+    }
+
+    async function startshowofsug(data) {
+      onlineSearch.textContent = null;
+      let res = await fetch(
+        `https://serpapi.com/search.json?engine=google&q=${data}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+      );
+
+      let respdata = await res.json();
+
+      let newdata = respdata.shopping_results;
+      console.log(respdata.shopping_results);
+      newdata.forEach(function (d) {
+        let p = document.createElement("p");
+        p.innerText = d.title;
+        p.onclick = function () {
+          console.log(d);
+          showMoreInfo(d);
+        };
+        onlineSearch.append(p);
+      });
+    }
+
+    function showMoreInfo(d) {
+      let showdatainpage = document.getElementById("newresults");
+      showdatainpage.style.marginLeft = "20%";
+
+      let div = document.createElement("div");
+      div.style.width = "250px";
+      let img = document.createElement("img");
+      img.src = d.thumbnail;
+      img.style.width = "200px";
+      img.style.marginLeft = "25px";
+      img.style.height = "250px";
+      let name = document.createElement("p");
+      name.style.color = "blue";
+      name.style.marginLeft = "3%";
+      name.innerText = d.title;
+      let price = document.createElement("p");
+      price.innerText = d.price;
+      let addtocartbtn = document.createElement("button");
+      addtocartbtn.innerText = "Add to cart";
+      addtocartbtn.onclick = function () {
+        Swal.fire("Good job!", "Added product to Cart Successfully", "success");
+      };
+      addtocartbtn.backgroundColor = "white";
+      addtocartbtn.style.marginLeft = "3%";
+      div.append(img, name, price, addtocartbtn);
+      showdatainpage.append(div);
+    }
+  </script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+
+  <!-- FOOTER SCRIPT ADDING -->
+</html>
+
+<script type="module">
+  // END FOOTER JS PART
+
+  var footerEndPush = document.getElementById("footerEndPush");
+
+  import footer from "./js elements/footer.js";
+
+  footerEndPush.innerHTML = footer();
+
+  // END FOOTER JS PART
+</script>

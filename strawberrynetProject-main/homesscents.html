@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Scents</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/homescents.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://media.glassdoor.com/sqll/2397264/strawberrynet-squarelogo-1561462036150.png"
+    />
+    <style>
+      #homesscents {
+        background-color: white;
+        color: #623381;
+        font-weight: bold;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"
+  ></script>
+
+  <body>
+    <div id="header"></div>
+    <div id="navbaroptions" class="bg"></div>
+
+    <!-- searching start here -->
+
+    <div id="newresults"></div>
+
+    <!-- searching end here -->
+
+    <div class="container" id="maincont">
+      <div id="left">
+        <div id="line">
+          <h6>Home Scents</h6>
+          <h2>S C E N T S</h2>
+        </div>
+        <h4>Refine by Brands</h4>
+        <div id="brands">
+          <div>
+            <input type="checkbox" id="mercari" /><label for=""
+              >111Skin (37)</label
+            >
+          </div>
+          <div><input type="checkbox" /><label for="">3LAB (6)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">3W Clinic (68)</label>
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">Academie (64)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">Aesop (47)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">Algenist (22)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">ASHIYA (4)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">Bellapierre s (2)</label>
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">Cellex-C (44)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">Decleor (55)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">Clinique (193)</label>
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">Erno Laszlo (43)</label>
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">First Aid (1)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">Guinot (99)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">Rubinstein (32)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">Kiehl's (58)</label></div>
+          <div><input type="checkbox" /><label for="">MAC (1)</label></div>
+        </div>
+        <div id="newarrivals">
+          <h3>Home Scents</h3>
+          <p>Skincare(10)</p>
+          <p>Make UP(5)</p>
+          <p>Hair Care(4)</p>
+          <p>Men's Cologne(6)</p>
+          <p>Women's Perfume(5)</p>
+        </div>
+        <div id="brands">
+          <div><input type="checkbox" /><label for="">Decleor (55)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">Clinique (193)</label>
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">Erno Laszlo (43)</label>
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">First Aid (1)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">Guinot (99)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">Rubinstein (32)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">Kiehl's (58)</label></div>
+          <div><input type="checkbox" /><label for="">MAC (1)</label></div>
+          <div>
+            <input type="checkbox" id="mercari" /><label for=""
+              >111Skin (37)</label
+            >
+          </div>
+          <div><input type="checkbox" /><label for="">3LAB (6)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">3W Clinic (68)</label>
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">Academie (64)</label>
+          </div>
+          <div><input type="checkbox" /><label for="">Aesop (47)</label></div>
+          <div>
+            <input type="checkbox" /><label for="">Algenist (22)</label>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="first">
+          <img
+            src="https://a.cdnsbn.com/images/English/category_EarlyBirdSale8offNov21_692_1.jpg"
+            alt=""
+          />
+        </div>
+        <div id="topbrands">
+          <h4>TOP HOME SCENTS BRANDS</h4>
+          <div>
+            <h6>BAREMINERALS</h6>
+            <h6>CHRISTIAN DIOR</h6>
+            <h6>CLINIQUE</h6>
+            <h6>ESTEE LAUDER</h6>
+            <h6>GIORGIO ARMANI</h6>
+            <h6>GIVENCHY</h6>
+            <h6>GUERLAIN</h6>
+            <h6>JANE IREDALE</h6>
+            <h6>LANCOME</h6>
+            <h6>LAURA MERCIER</h6>
+            <h6>NARS</h6>
+            <h6>YVES SAINT LAURENT</h6>
+          </div>
+          <div id="btn">
+            <button>View All Home Scents Brands ></button>
+          </div>
+        </div>
+        <div id="prodhead">
+          <div>11996 results for u</div>
+          <div id="prodbtn">
+            <h6>Worldwide RRP converted to INR.</h6>
+            <h5>View</h5>
+            <img
+              id="list"
+              src="https://www.logolynx.com/images/logolynx/00/00b9c1e4e9ef5c58b11ddecb020b8776.png"
+            />
+            <img
+              id="grid"
+              src="https://static.thenounproject.com/png/246685-200.png"
+            />
+            <select id="select" onchange="getchange()">
+              <option value="sortbypop">SORT BY POPULARITY</option>
+              <option value="lowpri">LOWEST PRICE</option>
+              <option value="AtoZ">BRAND A-Z</option>
+              <option value="ZtoA">HIGHEST PRIZE</option>
+            </select>
+          </div>
+          <h5>Home Scents</h5>
+        </div>
+        <div id="products"></div>
+      </div>
+    </div>
+    <div id="imge"></div>
+
+    <!-- FOOTER JS END -->
+
+    <div id="footerEndPush"></div>
+    <!-- FOOTER JS END -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+<script type="module">
+  import { headerupper, navbarbelow } from "./js elements/header.js";
+  let head = document.getElementById("header");
+  head.innerHTML = headerupper();
+  let navbaroptions = document.getElementById("navbaroptions");
+  navbaroptions.innerHTML = navbarbelow();
+
+  // END FOOTER JS PART
+
+  var searchdata = document.getElementById("inputdata");
+  let dbs = document.getElementById("searchableData");
+  dbs.addEventListener("click", fetchData);
+  async function fetchData() {
+    let itemneedned = searchdata.value;
+    let res = await fetch(
+      `https://serpapi.com/search.json?engine=google&q=${itemneedned}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+    );
+    let data = await res.json();
+    console.log(data);
+    let showdatainpage = document.getElementById("newresults");
+    let items = data.shopping_results;
+
+    showdatainpage.style.display = "grid";
+    showdatainpage.style.gridTemplateColumns = "auto auto auto auto";
+    showdatainpage.style.gap = "2%";
+    showdatainpage.style.marginLeft = "2%";
+    items.forEach((d) => {
+      let div = document.createElement("div");
+      div.style.width = "250px";
+      let img = document.createElement("img");
+      img.src = d.thumbnail;
+      img.style.width = "200px";
+      img.style.marginLeft = "25px";
+      img.style.height = "250px";
+      let name = document.createElement("p");
+      name.style.color = "blue";
+      name.style.marginLeft = "3%";
+      name.innerText = d.title;
+      let price = document.createElement("p");
+      price.innerText = d.price;
+      let addtocartbtn = document.createElement("button");
+      addtocartbtn.innerText = "Add to cart";
+      addtocartbtn.backgroundColor = "white";
+      addtocartbtn.style.marginLeft = "3%";
+      div.append(img, name, price, addtocartbtn);
+      showdatainpage.append(div);
+    });
+  }
+
+  // --------------------------------drop down effect for search tab-----------------------------
+
+  let onlineSearch = document.getElementById("onlineSearch");
+
+  // onlineSearch.addEventListener("click");
+  let searchinpdata = document.getElementById("inputdata");
+  var sets;
+  searchinpdata.addEventListener("input", startsearchingfordata);
+
+  function startsearchingfordata(e) {
+    onlineSearch.textContent = e.target.value;
+    var inpt = searchinpdata.value;
+
+    debounce(startshowofsug, 3000);
+    function debounce(startshowofsug, time) {
+      if (sets) {
+        clearTimeout(sets);
+      }
+      sets = setTimeout(() => {
+        startshowofsug(inpt);
+      }, time);
+    }
+
+    if (inpt != " ") {
+      let searchR = document.getElementById("onlineSearch");
+      searchR.style.display = "block";
+      searchR.style.backgroundColor = "white";
+      let out = searchinpdata.value;
+      console.log(out);
+    }
+    if (inpt == "") {
+      let searchR = document.getElementById("onlineSearch");
+      searchR.style.display = "none";
+      let showdatainpage = document.getElementById("newresults");
+      showdatainpage.innerHTML = null;
+    }
+  }
+
+  async function startshowofsug(data) {
+    onlineSearch.textContent = null;
+    let res = await fetch(
+      `https://serpapi.com/search.json?engine=google&q=${data}&google_domain=google.com&gl=us&hl=en&tbm=shop&start=8&num=8&api_key=a7045d2eebab85bbc1dc3b6f8077dfb18392b5c6137b39c8e7ecb7ff5e572415`
+    );
+
+    let respdata = await res.json();
+
+    let newdata = respdata.shopping_results;
+    console.log(respdata.shopping_results);
+    newdata.forEach(function (d) {
+      let p = document.createElement("p");
+      p.innerText = d.title;
+      p.onclick = function () {
+        console.log(d);
+        showMoreInfo(d);
+      };
+      onlineSearch.append(p);
+    });
+  }
+
+  function showMoreInfo(d) {
+    let showdatainpage = document.getElementById("newresults");
+    showdatainpage.style.marginLeft = "20%";
+
+    let div = document.createElement("div");
+    div.style.width = "250px";
+    let img = document.createElement("img");
+    img.src = d.thumbnail;
+    img.style.width = "200px";
+    img.style.marginLeft = "25px";
+    img.style.height = "250px";
+    let name = document.createElement("p");
+    name.style.color = "blue";
+    name.style.marginLeft = "3%";
+    name.innerText = d.title;
+    let price = document.createElement("p");
+    price.innerText = d.price;
+    let addtocartbtn = document.createElement("button");
+    addtocartbtn.innerText = "Add to cart";
+    addtocartbtn.backgroundColor = "white";
+    addtocartbtn.style.marginLeft = "3%";
+    div.append(img, name, price, addtocartbtn);
+    showdatainpage.append(div);
+  }
+
+  var footerEndPush = document.getElementById("footerEndPush");
+
+  import footer from "./js elements/footer.js";
+
+  footerEndPush.innerHTML = footer();
+</script>
+<script src="./js elements/homescents.js"></script>
+
+<!-- <script src="./js elements/debouncescript.js"></script> -->

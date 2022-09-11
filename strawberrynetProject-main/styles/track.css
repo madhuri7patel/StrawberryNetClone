@@ -1,0 +1,72 @@
+#points,
+#order,
+#h3,
+#enquiry {
+  color: blue;
+}
+#points > li:hover,
+#enquiry:hover {
+  color: black;
+}
+#h3,
+#order,
+#but,
+#inp {
+  font-size: 20px;
+}
+#track,#queries>div>button,#select{
+    background-color:#F06292;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#track,#queries > div > button {
+  background-color: #f06292;
+  color: whitesmoke;
+  font-size: 20px;
+}
+#track:hover,#queries > div > button:hover {
+  background-color: #d81b60;
+}
+
+#queries {
+  background-color: #efebe9;
+  border: 1px;
+  width: 60%;
+
+  margin: auto;
+  border-radius: 2%;
+  margin-top: 100px;
+}
+#status {
+  border: 3px;
+  margin-left: 0;
+  margin-top: 0;
+  background-color: white;
+}
+
+#header{
+    margin-bottom:30px;
+    }
+
+#products{
+    border:1px;
+    width:70%;
+    margin: auto;
+    margin-top:50px;
+
+}
+
+#products>div>button{
+    border: 0;
+  background: steelblue;
+  color: white;
+  font-weight: bold;
+  transition: background .3s linear;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+#header {
+  margin-bottom: 30px;
+}

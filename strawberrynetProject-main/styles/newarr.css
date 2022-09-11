@@ -1,0 +1,23 @@
+#headimg {
+  margin-left: 5%;
+  width: 90%;
+}
+#headdiv {
+  display: flex;
+}
+#back {
+  display: flex;
+  gap: 10px;
+  margin-left: 50px;
+}
+#back > a > button {
+  background-color: #00a69c;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+}
+
+#header {
+  margin-bottom: 30px;
+}

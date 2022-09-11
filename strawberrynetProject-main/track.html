@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="./styles/track.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://media.glassdoor.com/sqll/2397264/strawberrynet-squarelogo-1561462036150.png"
+    />
+    <style>
+      #headerend > div > select + button {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div id="navbaroptions" class="bg"></div>
+    <h1>TRACK YOUR ORDER</h1>
+    <div id="products"></div>
+    <div id="items"></div>
+    <button id="select">QUERIES</button>
+
+    
+    <div id="status"></div>
+   
+    
+    <h3 id="h3">Have questions about your shipment?</h3>
+    <ul id="points">
+      <li id="q1">How Long will it take to get my order?</li>
+      <li id="q2">What if my order hasn't arrived after 14 working days?</li>
+      <li id="q3">Which shipment methods can be tracked?</li>
+      <li id="q4">Will there be any taxes/custom duties</li>
+    </ul>
+    <h4>
+      If you still have questions about your order you can
+      <span id="enquiry">send us an enquiry.</span>
+    </h4>
+    <div id="queries"></div>
+
+    <!-- FOOTER JS END -->
+
+    <div id="footerEndPush"></div>
+
+    <!-- FOOTER JS END -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+<script src="./js elements/track.js"></script>
+<script src="./js elements/trackorder.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" >
+    let trackbutton = document.getElementById("products").querySelectorAll("button")
+    console.log(trackbutton);
+    for(var i = 0; i < trackbutton.length; i++){
+    trackbutton[i].onclick = function() {
+        var arv  = ['Kolkata','West Bengal (WB)','Uttarakhand (UK)','Shahjahanpur',
+			'Sant Kabir Nagar',
+			'Siddharthnagar',
+			'Sonbhadra',
+			'Sant Ravidas Nagar',
+			'Sultanpur',
+			'Shravasti',
+			'Unnao',
+			'Varanasi','Ghazipur',
+			'Gorakhpur',
+			'Ghaziabad',
+			'Hamirpur','Agra',
+			'Allahabad',
+			'Aligarh',
+			'Ambedkar Nagar',
+			'Auraiya',
+			'Azamgarh',
+			'Barabanki',
+			'Budaun',
+			'Bagpat',
+			'Bahraich','Uttar Pradesh (UP)','Tiruvarur',
+			'Tiruvannamalai',
+			'Vellore',
+			'Viluppuram',
+			'Virudhunagar','Tripura (TR)',
+			'Dhalai',
+			'North Tripura',
+			'South Tripura',
+			'Khowai',
+			'West Tripura','Sikkim (SK)','Angul',
+			'Boudh (Bauda)',
+			'Bhadrak',
+			'Balangir',
+			'Bargarh (Baragarh)',
+			'Balasore',
+			'Cuttack','Ajmer',
+			'Alwar',
+			'Bikaner',
+			'Barmer',
+			'Banswara',
+			'Bharatpur',
+			'Baran',
+			'Bundi','Mumbai City',
+			'Mumbai suburban',
+			'Nandurbar',
+			'Nanded',
+			'Nagpur',
+			'Nashik',
+			'Osmanabad',
+			'Parbhani',
+			'Pune',
+			'Raigad',
+			'Ratnagiri',
+			'Sindhudurg','Alirajpur',
+			'Anuppur',
+			'Ashok Nagar',
+			'Balaghat',
+			'Barwani',
+			'Betul',
+			'Bhind',
+			'Bhopal',
+			'Burhanpur',
+			'Chhatarpur',
+			'Chhindwara','Alappuzha',
+			'Ernakulam',
+			'Idukki',
+			'Kannur',
+			'Kasaragod',
+			'Kollam',
+			'Kottayam',
+			'Kozhikode',
+			'Malappuram','Bagalkot',
+			'Bangalore Rural',
+			'Bangalore Urban',
+			'Belgaum',
+			'Bellary',
+			'Bidar',
+			'Bijapur','Bokaro',
+			'Chatra',
+			'Deoghar',
+			'Dhanbad',
+			'Dumka',
+			'East Singhbhum',
+			'Garhwa',
+			'Giridih',
+			'Godda',
+			'Gumla','Ahmedabad',
+			'Amreli district',
+			'Anand',
+			'Banaskantha',
+			'Bharuch',
+			'Bhavnagar',
+			'Dahod',
+			'The Dangs',
+			'Gandhinagar',
+			'Jamnagar',
+			'Junagadh','Goa (GA)','Central Delhi',
+			'East Delhi',
+			'New Delhi',
+			'North Delhi',
+			'North East Delhi',
+			'North West Delhi','Araria',
+			'Arwal',
+			'Aurangabad',
+			'Banka',
+			'Begusarai',
+			'Bhagalpur',
+			'Bhojpur',
+			'Buxar',
+			'Darbhanga','Baksa',
+			'Barpeta',
+			'Bongaigaon',
+			'Cachar',
+			'Chirang',
+			'Darrang',
+			'Dhemaji',
+			'Dima Hasao','Adilabad',
+			'Anantapur',
+			'Chittoor',
+			'Kakinada',
+			'Guntur',
+			'Hyderabad',
+			'Karimnagar',
+			'Khammam',
+			'Krishna',
+			'Kurnool',
+			'Mahbubnagar',
+			'Medak',
+			'Nalgonda',
+			'Nizamabad',
+			'Ongole',
+			'Hyderabad',
+			'Srikakulam','Anjaw',
+			'Changlang',
+			'East Siang',
+			'Kurung Kumey',
+			'Lohit',
+			'Lower Dibang Valley',
+			'Lower Subansiri',
+			'Papum Pare',
+			'Tawang',
+			'Tirap',
+			'Dibang Valley','Baksa',
+			'Barpeta',
+			'Bongaigaon',
+			'Cachar',
+			'Chirang',
+			'Darrang',
+			'Dhemaji',];
+        
+        var item = arv[Math.round(Math.random()*(arv.length-1))];
+        var num = Math.floor(Math.random()*10) + " days "
+        
+        //alert('good')
+    
+        // 'Good job!',
+        // 'You Order reached to '+ item + ' It will reach to Your Location in ' + num ,
+        // //'Your Order Will reached to Your Location in'+ 2,
+        // 'success'
+        Swal.fire({
+  title: 'You Order reached to '+ item + '   It will reach to Your Location in ' + num ,
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: 'Save',
+  denyButtonText: `Don't save`,
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Saved!', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Changes are not saved', '', 'info')
+  }
+})
+       
+        
+      
+}
+}
+
+
+</script>
+
+
+<script type="module">
+  // END FOOTER JS PART
+
+  var footerEndPush = document.getElementById("footerEndPush");
+
+  import footer from "./js elements/footer.js";
+
+  footerEndPush.innerHTML = footer();
+
+  // END FOOTER JS PART
+</script>
+<script type="module">
+  import { headerupper, navbarbelow } from "./js elements/header.js";
+  let head = document.getElementById("header");
+  head.innerHTML = headerupper();
+  let navbaroptions = document.getElementById("navbaroptions");
+  navbaroptions.innerHTML = navbarbelow();
+  // END FOOTER JS PART
+
+  var footerEndPush = document.getElementById("footerEndPush");
+
+  import footer from "./js elements/footer.js";
+
+  footerEndPush.innerHTML = footer();
+
+  // END FOOTER JS PART
+</script>

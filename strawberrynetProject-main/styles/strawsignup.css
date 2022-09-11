@@ -1,0 +1,92 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: lato, sans-serif;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+h2 {
+  color: #623380;
+  border-bottom: 3px solid #623380;
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 500;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+#center {
+  width: 25%;
+  margin: auto;
+  background-color: white;
+}
+
+input {
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  border-color: #623380;
+}
+
+.passinput {
+  width: 80%;
+  margin: 15px auto;
+}
+
+h3 + div {
+  margin-top: 25px;
+}
+
+#myForm-signup > div {
+  width: 80%;
+  margin: 15px auto;
+}
+
+.robot {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.captcha {
+  font-size: 10px;
+}
+
+.check {
+  width: 25px;
+  margin-top: 20px;
+}
+
+.robot1 {
+  width: 80%;
+  margin: auto;
+  height: 70px;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.register {
+  background-color: #623380;
+  color: white;
+  width: 60%;
+  margin: 15px 20%;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#header {
+  margin-bottom: 30px;
+}

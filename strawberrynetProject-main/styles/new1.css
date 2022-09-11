@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+}
+#new {
+  color: rgb(228, 25, 18);
+}
+#new:hover,
+#gift:hover {
+  text-decoration: underline;
+}
+#image {
+  display: flex;
+  justify-content: space-evenly;
+}
+#newarrivals > :hover {
+  text-decoration: underline;
+}
+#products > div > div > p,
+#sortingproducts > div > div > p,
+#sorting300 > div > div > p {
+  font-size: 13px;
+  /* margin-left: 25px; */
+  text-align: center;
+  margin: 0px;
+}
+#brands {
+  border: 1px solid black;
+  height: 170px;
+  width: 150px;
+  overflow: auto;
+}
+#line {
+  width: auto;
+  border: 1px solid rgb(143, 138, 138);
+}
+#hover {
+  color: blue;
+}
+#hover:hover {
+  color: black;
+}
+#filter {
+  border: 2px;
+  display: flex;
+  justify-content: flex-end;
+}
+#filter > button {
+  height: 30px;
+  font-size: 18px;
+  background-color: #662d91;
+  margin: 10px;
+  color: white;
+  font-weight: 700;
+}
+#products > div,
+#sortingproducts > div,
+#sorting300 > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+#products > div > h4,
+#sortingproducts > div > h4,
+#sorting300 > div > h4 {
+  border: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+  background-image: url(https://a.cdnsbn.com/images/common/oitem_bg.gif);
+  color: white;
+  height: 180px;
+  width: 180px;
+  margin: 0px;
+}
+#products > div > div > button,
+#sortingproducts > div > div > button,
+#sorting300 > div > div > button {
+  border: 1px solid white;
+  /* margin-top: 5px; */
+  margin: 3px;
+  background-color: #6dcff6;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  width: 150px;
+  height: 30px;
+  padding: 4px;
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 18%);
+}
+#products > div > div,
+#sortingproducts > div > div,
+#sorting300 > div > div {
+  display: grid;
+}
+#products > div > button,
+#sortingproducts > div > button,
+#sorting300 > div > button {
+  border: 1px solid white;
+  height: 36px;
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 18%);
+  border-radius: 5px;
+  width: 60px;
+  margin-top: 60px;
+  /* margin-right: 70px; */
+  /* margin: auto; */
+  background-color: #00a69c;
+  color: white;
+  font-weight: 600;
+}
+#products > div > h5,
+#sortingproducts > div > h5,
+#sorting300 > div > h5 {
+  width: 200px;
+  font-size: 15px;
+  overflow: hidden;
+}
+#box {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+#products > div > div > img,
+#sortingproducts > div > div > img,
+#sorting300 > div > div > img {
+  height: 100px;
+  margin-left: 30px;
+}
+
+/* WRITING NEW CODE */
+
+#products,
+#sortingproducts,
+#sorting300 {
+  border-left: 0.5px solid rgb(179, 177, 177);
+}
+
+#products > div,
+#sortingproducts > div,
+#sorting300 > div {
+  border-bottom: 0.5px solid grey;
+  height: 185px;
+  /* margin-top: -10px; */
+}
+
+#newarrivals {
+  border-bottom: 1px solid grey;
+  width: 90%;
+}
+
+#brands {
+  width: 90%;
+  height: 200px;
+  border-right: 1px solid rgb(216, 211, 211);
+  border-bottom: 1px solid rgb(212, 207, 207);
+}
+
+#refine > h3 {
+  margin-bottom: 5px;
+}
+
+#products > div > h5,
+#sortingproducts > div > h5,
+#sorting300 > div > h5 {
+  margin-top: 8%;
+}
+/* WRITING NEW CODE */
+
+#header {
+  margin-bottom: 30px;
+}

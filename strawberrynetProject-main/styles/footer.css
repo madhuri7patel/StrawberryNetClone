@@ -1,0 +1,217 @@
+/* FOOTER WHOLE PART */
+
+/* FIRST BOX */
+/* 
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: lato, sans-serif;
+} */
+
+.light-purple {
+  background: url(https://a.cdnsbn.com/images/common/2016footer.jpg);
+  background-repeat: repeat;
+  height: 250px;
+}
+
+.footer-center {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-center {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* LEFT BOX */
+
+.footer-email {
+  width: 80%;
+  height: 50px;
+  font-size: 16px;
+}
+
+.footer-middlebox-margin > p,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-email + button {
+  height: 53px;
+  background-color: #662d91;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+  margin-left: -4px;
+}
+
+.footer-email + button:hover {
+  background-color: white;
+  color: #662d91;
+}
+
+.footer-ion-social > ion-icon {
+  color: white;
+  font-size: 32px;
+}
+
+.footer-social {
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px 40px;
+  grid-gap: 15px;
+}
+
+/* LEFT BOX */
+
+/* MIDDLE BOX */
+
+.footer-middlebox {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 30px 0px;
+}
+
+.footer-heart + div {
+  color: white;
+}
+
+.footer-heart > ion-icon {
+  font-size: 72px;
+  color: white;
+}
+
+/* MIDDLE BOX */
+
+/* LAST BOX */
+
+.footer-lastbox {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 30px 0px;
+}
+
+.footer-plane > ion-icon {
+  font-size: 72px;
+  color: white;
+}
+
+.footer-plane + div {
+  color: white;
+  font-size: 25px;
+}
+
+/* LAST BOX */
+
+/* FIRST BOX */
+
+/* SECOND BOX? */
+
+.purple {
+  background-color: #52246d;
+}
+
+.foot-center {
+  width: 80%;
+  margin: auto;
+}
+
+.ship > div {
+  border-right: 1px solid #ee2c72;
+  padding: 5px 20px;
+  width: fit-content;
+}
+
+.ship {
+  display: flex;
+  color: white;
+}
+
+.return {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  color: white;
+  border-bottom: 1px solid grey;
+}
+
+.with > img {
+  width: 100%;
+}
+
+.with {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-gap: 9px;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.download > img {
+  width: 100px;
+  margin: 20px 0px;
+}
+
+.excellent > img {
+  width: 100%;
+}
+
+.excellent {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-gap: 20px;
+}
+
+.pay {
+  color: white;
+  margin: 35px;
+  margin-left: 0px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  border-bottom: 5px solid #ee2c72;
+}
+
+.my-account > p,
+.our-company > p {
+  margin: 15px 0px;
+}
+
+.my-account > p:hover,
+.our-company > p:hover {
+  color: #a788be;
+}
+
+.end-part,
+.khatam {
+  color: white;
+}
+
+.end-part > p {
+  border-right: 1px solid white;
+  padding: 0px 10px;
+}
+
+.end-part > p:hover {
+  color: #a788be;
+}
+
+.end-part {
+  display: flex;
+}
+
+.khatam {
+  padding: 0px 10px;
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+
+/* SECOND BOX? */
+
+/* FOOTER WHOLE PART */

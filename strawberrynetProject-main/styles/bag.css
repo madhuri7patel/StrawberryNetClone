@@ -1,0 +1,140 @@
+#cont {
+  display: flex;
+  gap: 2%;
+}
+#cont11 {
+  width: 64%;
+}
+#cont11 > div > h4 {
+  padding: 10px;
+}
+#body {
+  background-color: #ede7f6;
+}
+#cont11 > div {
+  display: flex;
+}
+#cont11 > div > img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+select {
+  background-color: white;
+  border: none;
+  margin-top: 15px;
+  height: 20px;
+}
+#img {
+  margin-left: -15px;
+}
+#inline {
+  display: flex;
+  text-align: center;
+  margin-left: 30%;
+  gap: 3px;
+}
+#inline2 {
+  display: flex;
+  text-align: center;
+  margin-left: 35%;
+  gap: 3px;
+}
+#cont12 {
+  width: 34%;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  height: 350px;
+}
+#cont12 > button {
+  color: white;
+  background-color: rgb(126, 87, 194);
+  font-weight: 700;
+  width: 50%;
+  height: 35px;
+  margin: 20px;
+}
+#cont111 {
+  background-color: white;
+}
+#cont112 {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+#cont12 > a > button {
+  color: white;
+  background-color: rgb(126, 87, 194);
+  font-weight: 700;
+  width: 50%;
+  height: 35px;
+  margin: 20px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.container > h3 {
+  text-align: center;
+}
+#slider {
+  margin-top: 2%;
+}
+#slider > h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#slide {
+  display: flex;
+  width: 110%;
+  margin-left: -50px;
+  margin-bottom: 50px;
+}
+
+#slide > div > div {
+  padding: 10px;
+  justify-content: center;
+  background-color: white;
+}
+
+#slide > div > div:hover {
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 18%);
+  z-index: 1024;
+}
+
+#slide > div > div > button {
+  background-color: #33b8b0;
+  color: white;
+  margin-top: -100px;
+  margin-left: 50px;
+}
+
+#slide > div > div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#swapleft {
+  margin-top: 140px;
+  margin-right: 30px;
+  width: 40px;
+  height: 50px;
+}
+#swapright {
+  margin-top: 140px;
+  margin-left: 30px;
+  width: 40px;
+  height: 50px;
+}
+#cont113 {
+  margin-top: 20px;
+  height: 280px;
+  font-size: 18px;
+  overflow: scroll;
+  padding: 10px;
+  background-color: #cfd8dc;
+}

@@ -1,0 +1,303 @@
+/* a{
+  text-decoration: none;
+  color: white;
+} */
+
+.dropbtn {
+  color: white;
+  letter-spacing: 0.015em;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 600px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+/* .dropdown-content a:hover {background-color: rgb(179, 42, 42);} */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: white;
+  text-decoration: underline;
+  color: #623381;
+  font-weight: bold;
+}
+
+.bg {
+  background-color: #623381;
+  width: 100%;
+}
+
+/* *{
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+} */
+
+.column {
+  float: left;
+  width: 200px;
+  padding: 10px;
+  height: 300px;
+  background-color: white;
+}
+
+/* ul{
+margin-left:-40px;
+} */
+
+ul:hover {
+  color: #c50d72;
+  text-decoration: underline;
+}
+
+.nav-barCenter {
+  width: 98%;
+  margin: auto;
+}
+#navbaroptions > div > div > div:nth-child(1) > ion-icon {
+  height: 12px;
+  width: 12px;
+  color: #3f1f74;
+}
+
+#navbaroptions > div > div > div:nth-child(1) {
+  padding: 10px 24px;
+}
+/* Header Upper Part Narendra */
+#header {
+  background-color: white;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 4%;
+}
+
+#header > div > img {
+  height: 60px;
+  width: 240px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#inputdata {
+  border-radius: 5px;
+  /*border:solid 2px #623381;*/
+  width: 93%;
+  color: #623381;
+  height: 30px;
+  font-size: 13px;
+  background-color: white;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+#searchbar {
+  margin-top: 20px;
+  border: solid 2px #623381;
+  color: #623381;
+  border-radius: 5px;
+  background-color: white;
+  height: 40px;
+}
+#headermiddle > div > ion-icon {
+  height: 25px;
+  background-color: white;
+}
+/* #headermiddle>div:nth-child(3){
+  color: #623381;
+} */
+#searchbar + div {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+#searchbar + div > button {
+  border-right: solid 1px rgba(0, 0, 0, 0.5);
+  width: 100px;
+  display: flex;
+  height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+
+#searchbar + div > button:hover {
+  text-decoration: underline;
+}
+#headerend > div > select {
+  border: none;
+  text-align: right;
+  color: #c50d72;
+  background-color: white;
+}
+
+#headerend > div {
+  text-align: right;
+  color: #c50d72;
+  background-color: white;
+}
+#headerend > b {
+  display: flex;
+  margin-bottom: 10px;
+}
+#headerend > div > button {
+  padding: 5px;
+  border: none;
+  color: #c50d72;
+  background-color: white;
+}
+
+#headerend > div > button:hover {
+  text-decoration: underline;
+}
+
+#headerend div:nth-child(2) {
+  margin-top: 10px;
+  display: block;
+}
+#headerend div:nth-child(2) > button {
+  vertical-align: top;
+  font-size: 15px;
+}
+#headerend div:nth-child(2) > button > ion-icon {
+  height: 40px;
+  width: 40px;
+  vertical-align: bottom;
+  margin-right: 5px;
+  color: #c50d72;
+}
+
+/* LOGIN PART CSS */
+
+.material-icons {
+  cursor: pointer;
+}
+
+#login {
+  top: -800px;
+}
+
+.login {
+  margin: auto;
+  width: 400px;
+  height: 90%;
+  /* border-radius: 10px; */
+  position: absolute;
+  transition: 0.3s;
+  background-color: rgb(255, 255, 255);
+  /* padding-bottom: 50px; */
+}
+.cross {
+  display: flex;
+  padding: 5px;
+  padding-left: 370px;
+}
+
+#email-input,
+#password-input {
+  width: 80%;
+  height: 33px;
+  margin: 15px 10%;
+}
+
+.sign-button {
+  width: 80%;
+  margin: auto 10%;
+  background-color: #623381;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  height: 30px;
+}
+
+.sign-button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.forgot {
+  color: #623381;
+  text-decoration: underline;
+  margin-left: 10%;
+}
+
+.forgot:hover {
+  color: #ccc;
+}
+
+.line-straight {
+  height: 3px;
+  border-radius: 10%;
+  width: 70%;
+  margin: auto;
+  background-color: #623381;
+}
+
+.login-div > h3 {
+  color: #623381;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.new-account > a {
+  text-decoration: none;
+}
+
+.new-account > a:hover {
+  color: #ccc;
+}
+
+.new-account {
+  margin: 15px 10%;
+}
+
+/* LOGIN PART CSS */
+#productOptions {
+  display: none;
+  position: absolute;
+  max-height: 60px;
+  max-width: 30%;
+  background-color: white;
+
+  overflow: scroll;
+}
+#productOptions > p {
+  color: black;
+  line-height: 15px;
+}
+#productOptions > p:hover {
+  background-color: lightcyan;
+}
+#productOptions::-webkit-scrollbar {
+  display: none;
+}
+
+.ctop {
+  background: transparent;
+  border: none;
+}
+
+#onlineSearch {
+  width: 503px;
+  border-radius: 5px;
+  height: 200px;
+  position: relative;
+  border: 2px solid purple;
+  margin-left: 3px;
+  margin-top: -28px;
+  display: none;
+  overflow: scroll;
+  padding: 10px;
+}

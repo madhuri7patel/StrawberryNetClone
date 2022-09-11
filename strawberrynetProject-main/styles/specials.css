@@ -1,0 +1,45 @@
+#giftsets {
+  display: flex;
+  gap: 3%;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+#giftsets > h5 {
+  color: #673ab7;
+}
+#discountblock {
+  display: flex;
+  color: #311b92;
+}
+#hr {
+  border: 3px solid #311b92;
+  width: 68%;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+#hr2 {
+  border: 3px solid #311b92;
+  width: 80%;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+#hr3 {
+  border: 3px solid #311b92;
+  width: 85%;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+#discountblock1 {
+  margin-top: 350px;
+  display: flex;
+  color: #311b92;
+}
+#discountblock2 {
+  margin-top: 50px;
+  display: flex;
+  color: #311b92;
+}
+
+#header {
+  margin-bottom: 30px;
+}
